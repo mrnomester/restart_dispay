@@ -211,7 +211,7 @@ function Reset-Display {
         
         # Пауза между действиями
         if ($FullMode) {
-            Start-Sleep -Milliseconds 500
+            Start-Sleep -Milliseconds 10000
         }
     }
 
@@ -273,4 +273,5 @@ finally {
     Write-Host "`nНажмите любую клавишу для выхода..."
     [void][System.Console]::ReadKey($true)
 }
+
 #endregion
